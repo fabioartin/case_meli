@@ -97,6 +97,6 @@ DELIMITER ;
 -- Cria um evento agendado para executar o procedimento diariamente à meia-noite
 CREATE EVENT PopulateItemDailyStatusEvent
 ON SCHEDULE EVERY 1 DAY
-STARTS '2024-07-29 00:00:00'
+STARTS '2024-07-29 23:59:59'
 DO
 CALL PopulateItemDailyStatus();
